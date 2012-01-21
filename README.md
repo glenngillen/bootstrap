@@ -1,40 +1,17 @@
-OSX Bootstrap
-========================================================================
+# OSX Bootstrap
 
-This is a little chef repo that I use for setting up a new mac. I'm
-*very* lazy so most of the preferences are hardcoded in the
-cookbooks. The result is that this sets up a machine the way I want,
-which is quite possibly not how you want. I'll probably make it more
-tunable later, but... lazy :D
+Builds a dev machine for me. Based on [Ben Bleything's Bootstrap](https://github.com/bleything/bootstrap).
 
-Prerequisites
-------------------------------------------------------------------------
+## Usage
 
-You've got choices! If you want, you can try the [OSX GCC Installer],
-but you won't be able to build anything that needs the Cocoa headers...
-that means no MacVim or Cocoa Emacs.
-
-Alternately, you can install XCode from the App Store... but then you'll
-have the LLVM version of GCC and won't be able to build (for instance)
-[Ruby Enterprise Edition].
-
-To be safe, install both.
-
-You'll also need to install chef.
-
-[OSX GCC Installer]: https://github.com/kennethreitz/osx-gcc-installer/downloads
-[Ruby Enterprise Edition]: http://www.rubyenterpriseedition.com
-
-How Do?
-------------------------------------------------------------------------
-
-* check out the repo
-* copy `config/example.json` to `config/whatever.json`
-* edit your json file to taste
-* `rake converge[whatever]`
+    bash < <(curl -s https://raw.github.com/glenngillen/bootstrap/master/bin/bootstrap)
 
 Contributions and Thanks
 ------------------------------------------------------------------------
+
+This bootstrap blatantly lifter from:
+
+* [Ben Bleything][bbleything]
 
 Contributions from:
 
