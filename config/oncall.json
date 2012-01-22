@@ -3,7 +3,7 @@
 
     "run_list": [
         "recipe[apps::1password]",
-        "recipe[apps::dropbox]",
+        "recipe[apps::dropbox]"
     ],
 
     "homebrew": {

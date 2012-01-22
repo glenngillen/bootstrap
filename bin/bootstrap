@@ -6,15 +6,22 @@ echo "GCC Installed. Now go install XCode from the app store, we'll wait."
 echo "[Press enter when done]"
 read aok
 bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
-rvm install 1.9.2
 rvm install 1.9.3
-rvm install 1.8.7
-rvm 1.9.2 --default
-rvm 1.9.2
-gem install bundler --no-ri --no-rdoc
+rvm 1.9.3 --default
 rvm 1.9.3
 gem install bundler --no-ri --no-rdoc
-rvm 1.8.7
-gem install bundler --no-ri --no-rdoc
 gem install chef --no-ri --no-rdoc
-
+cd ~
+curl -L -o bootstrap.zip https://github.com/glenngillen/bootstrap/zipball/master
+unzip bootstrap.zip -d bootstrap
+mv bootstrap/glenngillen-bootstrap-*/* bootstrap/
+mv bootstrap/glenngillen-bootstrap-*/.* bootstrap/
+rm -rf bootstrap/glenngillen-bootstrap-*
+cd bootstrap
+rvm use --create 1.9.3@bootstrap
+echo "Ready to install dependencies, what do you want:"
+echo "1) Minimum on-call setup"
+echo "2) Basic development environment"
+echo "3) Personal machine"
+echo ""
+read setupoption
