@@ -2,10 +2,11 @@
     "hostname": "example",
 
     "run_list": [
-        "recipe[apps::1password]",
-        "recipe[apps::alfred]",
-        "recipe[apps::chrome]",
+        "recipe[sshkeys]",
+        "recipe[dotfiles]",
+
         "recipe[apps::dropbox]",
+        "recipe[apps::chrome]",
 
         "recipe[config::dock]",
         "recipe[config::finder]",
@@ -16,15 +17,14 @@
 
         "recipe[homebrew]",
         "recipe[homebrew::packages]"
+
     ],
 
     "homebrew": {
         "packages": [
             "ack",
             "git",
-            "macvim",
-            "par",
-            "unison"
+            "macvim"
         ]
     },
 
