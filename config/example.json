@@ -1,28 +1,11 @@
 {
-    "hostname": "calculon",
+    "hostname": "example",
 
     "run_list": [
+        "recipe[apps::1password]",
+        "recipe[apps::alfred]",
         "recipe[apps::chrome]",
         "recipe[apps::dropbox]",
-        "recipe[apps::adium]",
-        "recipe[apps::doxie]",
-        "recipe[apps::firefox]",
-        "recipe[apps::fitbit]",
-        "recipe[apps::flux]",
-        "recipe[apps::gitx]",
-        "recipe[apps::handbrake]",
-        "recipe[apps::inkscape]",
-        "recipe[apps::iterm]",
-        "recipe[apps::keepassx]",
-        "recipe[apps::little_snitch]",
-        "recipe[apps::plex]",
-        "recipe[apps::propane]",
-        "recipe[apps::skype]",
-        "recipe[apps::spotify]",
-        "recipe[apps::trailrunner]",
-        "recipe[apps::transmission]",
-        "recipe[apps::vlc]",
-        "recipe[apps::vmware_fusion]",
 
         "recipe[config::dock]",
         "recipe[config::finder]",
@@ -40,16 +23,8 @@
             "ack",
             "git",
             "macvim",
-            "graphicsmagick",
-            "gnupg",
-            "gnu-sed",
-            "graphviz",
-            "libxml2",
-            "libxslt",
-            "mcrypt",
-            "postgresql",
-            "redis",
-            "wget"
+            "par",
+            "unison"
         ]
     },
 

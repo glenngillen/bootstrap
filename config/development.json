@@ -27,18 +27,4 @@
             "macvim"
         ]
     },
-
-    "alfred": {
-        "sync_folder": "/Users/someguy/Dropbox/.sync/Alfred",
-        "email": "someguy@xample.com",
-        "key": "LIC-EN-SE"
-    },
-
-    "one_password": {
-        "name": "Some Guy",
-        "key": "LIC-EN-SE",
-
-        "version": "3.8.12",
-        "checksum": "9e7ad33a876ce9a5d1a63438d95619ca0e3240af"
-    }
 }
