@@ -2,27 +2,7 @@
     "hostname": "calculon",
 
     "run_list": [
-        "recipe[apps::1password]",
+        "recipe[sshkeys]",
         "recipe[apps::dropbox]"
     ],
-
-    "homebrew": {
-        "packages": [
-            "ack",
-            "git"
-        ]
-    },
-
-    "alfred": {
-        "sync_folder": "/Users/someguy/Dropbox/.sync/Alfred",
-        "email": "someguy@xample.com",
-        "key": "LIC-EN-SE"
-    },
-
-    "one_password": {
-        "name": "Some Guy",
-        "key": "LIC-EN-SE",
-        "version": "3.8.14",
-        "checksum": "b6c679e7968182e2116cc84c434950c3"
-    }
 }
