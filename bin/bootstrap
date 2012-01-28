@@ -1,16 +1,19 @@
-#!/bin/sh
+#!/bin/bash
 curl -L -o osx-gcc-installer.pkg https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.7-v2.pkg
 sudo installer -pkg ./osx-gcc-installer.pkg -target "/"
 rm osx-gcc-installer.pkg
 echo "GCC Installed. Now go install XCode from the app store, we'll wait."
 echo "[Press enter when done]"
 read aok
-bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+curl -L -o rvm-installer https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer
+chmod +x ./rvm-installer
+./rvm-installer
+rm rvm-installer
+source ~/.bash_profile
 rvm install 1.9.3
 rvm 1.9.3 --default
 rvm 1.9.3
 gem install bundler --no-ri --no-rdoc
-gem install chef --no-ri --no-rdoc
 cd ~
 curl -L -o bootstrap.zip https://github.com/glenngillen/bootstrap/zipball/master
 unzip bootstrap.zip -d bootstrap
@@ -19,9 +22,7 @@ mv bootstrap/glenngillen-bootstrap-*/.* bootstrap/
 rm -rf bootstrap/glenngillen-bootstrap-*
 cd bootstrap
 rvm use --create 1.9.3@bootstrap
-echo "Ready to install dependencies, what do you want:"
-echo "1) Minimum on-call setup"
-echo "2) Basic development environment"
-echo "3) Personal machine"
+bundle install
+echo "Run 'bundle exec rake converge[type]' to setup"
+echo "Where type is something like: development, oncall, etc."
 echo ""
-read setupoption
