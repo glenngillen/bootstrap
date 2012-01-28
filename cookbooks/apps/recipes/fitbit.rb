@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: apps
-# Recipe:: cocoa rest client
+# Recipe:: fitbit
 #
 # Copyright 2012, Glenn Gillen <me@glenngillen.com>
 #
@@ -19,7 +19,7 @@
 
 include_recipe 'dmg'
 
-dmg_package 'Cocoa Rest Client' do
-  volumes_dir 'CocoaRestClient-Dist'
-  source      'http://cocoa-rest-client.googlecode.com/files/CocoaRestClient-1.2.4.dmg'
+dmg_package 'FitBit' do
+  volumes_dir 'Fitbit-Uploader-For-Mac-1.8.2-Beta-2011-07-26'
+  source      'http://cache.fitbit.com/uploader/Fitbit-Uploader-For-Mac-1.8.2-2011-07-26.dmg'
 end
