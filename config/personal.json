@@ -1,44 +1,29 @@
 {
-    "hostname": "example",
+    "hostname": "calculon",
 
     "run_list": [
         "recipe[apps::chrome]",
         "recipe[apps::dropbox]",
         "recipe[apps::adium]",
         "recipe[apps::doxie]",
-        "recipe[apps::firefox]",
         "recipe[apps::fitbit]",
         "recipe[apps::flux]",
-        "recipe[apps::gitx]",
         "recipe[apps::handbrake]",
         "recipe[apps::inkscape]",
-        "recipe[apps::iterm]",
         "recipe[apps::little_snitch]",
         "recipe[apps::plex]",
-        "recipe[apps::propane]",
         "recipe[apps::skype]",
         "recipe[apps::spotify]",
         "recipe[apps::trailrunner]",
         "recipe[apps::transmission]",
         "recipe[apps::vlc]",
-        "recipe[apps::vmware_fusion]",
 
         "recipe[config::dock]",
         "recipe[config::finder]",
         "recipe[config::global]",
         "recipe[config::hot_corners]",
         "recipe[config::hostname]",
-        "recipe[config::screensaver]",
+        "recipe[config::screensaver]"
 
-        "recipe[homebrew]",
-        "recipe[homebrew::packages]"
     ],
-
-    "homebrew": {
-        "packages": [
-            "ack",
-            "git",
-            "macvim"
-        ]
-    },
 }

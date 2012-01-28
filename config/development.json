@@ -1,5 +1,5 @@
 {
-    "hostname": "example",
+    "hostname": "calculon",
 
     "run_list": [
         "recipe[sshkeys]",
