@@ -21,5 +21,5 @@ include_recipe 'dmg'
 
 dmg_package 'Adium' do
   volumes_dir 'Adium 1.4.4'
-  source      'http://adium.im/?download=10.6'
+  source      'http://download.adium.im/Adium_1.4.4.dmg'
 end
