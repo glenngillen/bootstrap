@@ -30,7 +30,8 @@
         "packages": [
             "ack",
             "git",
-            "macvim"
+            "macvim",
+            "tmux"
         ]
     },
 }
