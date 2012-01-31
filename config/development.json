@@ -8,12 +8,12 @@
         "recipe[apps::chrome]",
         "recipe[apps::dropbox]",
         "recipe[apps::adium]",
-        "recipe[apps::gitx]",
-        "recipe[apps::iterm]",
+        //"recipe[apps::gitx]",
+        //"recipe[apps::iterm]",
         "recipe[apps::little_snitch]",
-        "recipe[apps::propane]",
+        //"recipe[apps::propane]",
         "recipe[apps::skype]",
-        "recipe[apps::vmware_fusion]",
+        //"recipe[apps::vmware_fusion]",
 
         "recipe[config::dock]",
         "recipe[config::finder]",
@@ -33,5 +33,5 @@
             "macvim",
             "tmux"
         ]
-    },
+    }
 }
