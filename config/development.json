@@ -10,9 +10,9 @@
         "recipe[apps::adium]",
         //"recipe[apps::gitx]",
         //"recipe[apps::iterm]",
-        "recipe[apps::little_snitch]",
+        //"recipe[apps::little_snitch]",
         //"recipe[apps::propane]",
-        "recipe[apps::skype]",
+        //"recipe[apps::skype]",
         //"recipe[apps::vmware_fusion]",
 
         "recipe[config::dock]",
@@ -31,6 +31,7 @@
             "ack",
             "git",
             "macvim",
+            "libevent",
             "tmux"
         ]
     }

@@ -9,3 +9,7 @@ package 'git'
 execute "update homebrew from github" do
   command "/usr/local/bin/brew update || true"
 end
+
+execute "fix homebrew ownership" do
+  command "chown -R #{ENV['USER']}:staff /usr/local/Cellar"
+end
