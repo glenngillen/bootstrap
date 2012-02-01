@@ -3,6 +3,7 @@
 
     "run_list": [
         "recipe[sshkeys]",
+        "recipe[oh-my-zsh]",
         "recipe[dotfiles]",
 
         "recipe[apps::chrome]",
@@ -33,7 +34,8 @@
             "macvim",
             "libevent",
             "tmux",
-            "grc"
+            "grc",
+            "wget"
         ]
     }
 }

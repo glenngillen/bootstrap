@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+gem_package "hub"
+
 git "#{ENV['HOME']}/dotfiles" do
   repository "https://github.com/glenngillen/dotfiles.git"
   reference "master"
