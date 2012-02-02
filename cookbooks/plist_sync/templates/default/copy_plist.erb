@@ -1,0 +1,34 @@
+#!/usr/bin/ruby
+require 'fileutils'
+require 'pathname'
+
+# Configuration
+preference_files = %w(
+  <% node.plist_sync.apps.each do |app| -%>
+    <%= app %>
+  <% end -%>
+)
+
+# Set paths for preferences and dropbox mirror
+preference_root = Pathname.new(ENV['HOME']).realpath.join('Library', 'Preferences')
+dropbox_root = Pathname.new(ENV['HOME']).realpath.join('Dropbox', 'Preferences')
+
+# Overwrite newer files from preferences to dropbox and vice-versa
+preference_files.each do |filename|
+  pfile = preference_root + filename
+  dfile = dropbox_root + filename
+
+  FileUtils.cp(pfile, dfile, :preserve => true) if pfile.exist? and !dfile.exist?
+  FileUtils.cp(dfile, pfile, :preserve => true) if dfile.exist? and !pfile.exist?
+
+  if pfile.mtime > dfile.mtime
+    puts "Copied #{pfile} (#{pfile.mtime}) to #{dfile} (#{dfile.mtime})"
+    FileUtils.cp(pfile, dfile, :preserve => true)
+  elsif dfile.mtime > pfile.mtime
+    puts "Copied #{dfile} (#{dfile.mtime}) to #{pfile} (#{pfile.mtime})"
+    FileUtils.cp(dfile, pfile, :preserve => true)
+  end
+end
+
+# Delay next operation
+sleep 30

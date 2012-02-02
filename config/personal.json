@@ -18,7 +18,8 @@
         "recipe[config::global]",
         "recipe[config::hot_corners]",
         "recipe[config::hostname]",
-        "recipe[config::screensaver]"
+        "recipe[config::screensaver]",
 
+	"recipe[plist_sync]"
     ],
 }
