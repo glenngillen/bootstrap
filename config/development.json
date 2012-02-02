@@ -9,7 +9,7 @@
        "recipe[apps::chrome]",
        "recipe[apps::dropbox]",
        "recipe[apps::adium]",
-       "recipe[apps::gitx]",
+       //"recipe[apps::gitx]",
        //"recipe[apps::iterm]",
        //"recipe[apps::little_snitch]",
        "recipe[propane]",
@@ -38,7 +38,8 @@
             "libevent",
             "tmux",
             "grc",
-            "wget"
+            "wget",
+	    "postgresql"
         ]
     },
 
