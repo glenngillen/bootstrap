@@ -39,7 +39,8 @@
             "tmux",
             "grc",
             "wget",
-	    "postgresql"
+	    "postgresql",
+	    "imagemagick"
         ]
     },
 
