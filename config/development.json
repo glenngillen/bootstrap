@@ -9,10 +9,10 @@
        "recipe[apps::chrome]",
        "recipe[apps::dropbox]",
        "recipe[apps::adium]",
-       //"recipe[apps::gitx]",
+       "recipe[apps::gitx]",
        //"recipe[apps::iterm]",
        //"recipe[apps::little_snitch]",
-       //"recipe[apps::propane]",
+       "recipe[propane]",
        //"recipe[apps::skype]",
        //"recipe[apps::vmware_fusion]",
 
