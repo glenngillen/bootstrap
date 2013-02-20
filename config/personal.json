@@ -24,4 +24,54 @@
         "recipe[homebrew::casks]",
         "recipe[plist_sync]"
     ],
+
+    "homebrew": {
+        "taps": [
+            "phinze/homebrew-cask"
+        ],
+        "packages": [
+            "brew-cask"
+        ],
+        "casks": [
+            "spotify",
+            "google-chrome",
+            "skype",
+            "little-snitch",
+            "dropbox",
+            "divvy",
+            "bartender",
+            "plex",
+
+        ]
+    },
+
+    "plist_sync": {
+      "apps": [
+          "com.Growl.GrowlHelperApp.plist",
+          "com.adiumX.adiumX.plist",
+          "com.alfredapp.Alfred.plist",
+          "com.apple.Terminal.plist",
+          "com.apple.iCal.Alarm.plist",
+          "com.apple.iCal.helper.plist",
+          "com.apple.iCal.plist",
+          "com.berbie.trailrunner.LSSharedFileList.plist",
+          "com.berbie.trailrunner.plist",
+          "com.culturedcode.things.plist",
+          "com.culturedcode.thingshelper.plist",
+          "com.echofon.Echofon.plist",
+          "com.flexibits.fantastical.plist",
+          "com.garmin.AntAgent.plist",
+          "com.garmin.GarminGpsControl.plist",
+          "com.garmin.TrainingCenter.plist",
+          "com.google.Chrome.helper.plist",
+          "com.google.Chrome.plist",
+          "com.googlecode.iterm2.plist",
+          "com.linebreak.Cloud.plist",
+          "com.mizage.divvy.plist",
+          "com.protocool.Propane.plist",
+          "com.spotify.client.plist",
+          "com.ugolandini.Pomodoro.plist",
+          "net.shinyfrog.delibar.plist"
+      ]
+    }
 }
