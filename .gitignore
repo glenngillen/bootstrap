@@ -2,3 +2,4 @@
 .chef/cache/
 .chef/checksums/
 .*.sw?
+vendored_cookbooks/homebrew
