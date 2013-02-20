@@ -4,15 +4,7 @@
        "recipe[oh-my-zsh]",
        "recipe[dotfiles]",
 
-       "recipe[apps::chrome]",
-       "recipe[apps::dropbox]",
        "recipe[apps::adium]",
-       //"recipe[apps::gitx]",
-       //"recipe[apps::iterm]",
-       //"recipe[apps::little_snitch]",
-       "recipe[propane]",
-       //"recipe[apps::skype]",
-       //"recipe[apps::vmware_fusion]",
        "recipe[config::dock]",
        "recipe[config::finder]",
        "recipe[config::global]",
@@ -29,7 +21,7 @@
 
     "homebrew": {
         "taps": [
-            //"phinze/homebrew-cask"
+            "phinze/homebrew-cask"
         ],
         "packages": [
             "ack",

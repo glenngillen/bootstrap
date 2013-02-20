@@ -2,5 +2,21 @@
     "run_list": [
         "recipe[sshkeys]",
         "recipe[apps::dropbox]"
+        "recipe[homebrew]",
+        "recipe[homebrew::taps]",
+        "recipe[homebrew::packages]",
+        "recipe[homebrew::casks]",
     ],
+    "homebrew": {
+        "taps": [
+            "phinze/homebrew-cask"
+        ],
+        "packages": [
+            "git",
+            "brew-cask"
+        ],
+        "casks": [
+            "propane",
+        ]
+    },
 }

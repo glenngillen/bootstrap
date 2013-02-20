@@ -17,5 +17,11 @@
         "recipe[config::global]",
         "recipe[config::hot_corners]",
         "recipe[config::screensaver]"
+
+        "recipe[homebrew]",
+        "recipe[homebrew::taps]",
+        "recipe[homebrew::packages]",
+        "recipe[homebrew::casks]",
+        "recipe[plist_sync]"
     ],
 }
