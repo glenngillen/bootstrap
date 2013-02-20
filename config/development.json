@@ -20,12 +20,17 @@
        "recipe[config::screensaver]",
 
        "recipe[homebrew]",
+       "recipe[homebrew::taps]",
        "recipe[homebrew::packages]",
-        "recipe[plist_sync]"
+       "recipe[homebrew::casks]",
+       "recipe[plist_sync]"
 
     ],
 
     "homebrew": {
+        "taps": [
+            "phinze/homebrew-cask"
+        ],
         "packages": [
             "ack",
             "git",
@@ -36,7 +41,20 @@
             "wget",
             "postgresql",
             "imagemagick",
-            "libyaml"
+            "libyaml",
+            "brew-cask"
+        ],
+        "casks": [
+            "spotify",
+            "google-chrome",
+            "skype",
+            "propane",
+            "little-snitch",
+            "iterm2",
+            "dropbox",
+            "gitx-l",
+            "divvy",
+            "bartender"
         ]
     },
 
