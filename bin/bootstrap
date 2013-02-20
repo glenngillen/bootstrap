@@ -89,4 +89,6 @@ echo "Open a new terminal session and run 'bundle exec rake converge[type]' to s
 echo "Where type is something like: development, oncall, etc."
 echo ""
 echo "If you get an error about /Developer not existing you probably need to 'sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer'"
+echo "Until I find a better way, if you're getting YAML errors re-install ruby 1.9.3:"
+echo "rvm reinstall 1.9.3 --with-libyaml-dir=/usr/local"
 echo ""
