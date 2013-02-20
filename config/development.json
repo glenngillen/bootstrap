@@ -29,7 +29,7 @@
 
     "homebrew": {
         "taps": [
-            "phinze/homebrew-cask"
+            //"phinze/homebrew-cask"
         ],
         "packages": [
             "ack",
