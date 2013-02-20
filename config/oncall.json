@@ -1,6 +1,4 @@
 {
-    "hostname": "calculon",
-
     "run_list": [
         "recipe[sshkeys]",
         "recipe[apps::dropbox]"

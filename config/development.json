@@ -1,6 +1,4 @@
 {
-    "hostname": "calculon",
-
     "run_list": [
        "recipe[sshkeys]",
        "recipe[oh-my-zsh]",
@@ -15,18 +13,15 @@
        "recipe[propane]",
        //"recipe[apps::skype]",
        //"recipe[apps::vmware_fusion]",
-
        "recipe[config::dock]",
        "recipe[config::finder]",
        "recipe[config::global]",
        "recipe[config::hot_corners]",
-       "recipe[config::hostname]",
        "recipe[config::screensaver]",
 
        "recipe[homebrew]",
        "recipe[homebrew::packages]",
-
-	"recipe[plist_sync]"
+        "recipe[plist_sync]"
 
     ],
 
@@ -39,38 +34,39 @@
             "tmux",
             "grc",
             "wget",
-	    "postgresql",
-	    "imagemagick"
+            "postgresql",
+            "imagemagick",
+            "libyaml"
         ]
     },
 
     "plist_sync": {
-	"apps": [
-	    "com.Growl.GrowlHelperApp.plist",
-	    "com.adiumX.adiumX.plist",
-	    "com.alfredapp.Alfred.plist",
-	    "com.apple.Terminal.plist",
-	    "com.apple.iCal.Alarm.plist",
-	    "com.apple.iCal.helper.plist",
-	    "com.apple.iCal.plist",
-	    "com.berbie.trailrunner.LSSharedFileList.plist",
-	    "com.berbie.trailrunner.plist",
-	    "com.culturedcode.things.plist",
-	    "com.culturedcode.thingshelper.plist",
-	    "com.echofon.Echofon.plist",
-	    "com.flexibits.fantastical.plist",
-	    "com.garmin.AntAgent.plist",
-	    "com.garmin.GarminGpsControl.plist",
-	    "com.garmin.TrainingCenter.plist",
-	    "com.google.Chrome.helper.plist",
-	    "com.google.Chrome.plist",
-	    "com.googlecode.iterm2.plist",
-	    "com.linebreak.Cloud.plist",
-	    "com.mizage.divvy.plist",
-	    "com.protocool.Propane.plist",
-	    "com.spotify.client.plist",
-	    "com.ugolandini.Pomodoro.plist",
-	    "net.shinyfrog.delibar.plist"
-	]
+      "apps": [
+          "com.Growl.GrowlHelperApp.plist",
+          "com.adiumX.adiumX.plist",
+          "com.alfredapp.Alfred.plist",
+          "com.apple.Terminal.plist",
+          "com.apple.iCal.Alarm.plist",
+          "com.apple.iCal.helper.plist",
+          "com.apple.iCal.plist",
+          "com.berbie.trailrunner.LSSharedFileList.plist",
+          "com.berbie.trailrunner.plist",
+          "com.culturedcode.things.plist",
+          "com.culturedcode.thingshelper.plist",
+          "com.echofon.Echofon.plist",
+          "com.flexibits.fantastical.plist",
+          "com.garmin.AntAgent.plist",
+          "com.garmin.GarminGpsControl.plist",
+          "com.garmin.TrainingCenter.plist",
+          "com.google.Chrome.helper.plist",
+          "com.google.Chrome.plist",
+          "com.googlecode.iterm2.plist",
+          "com.linebreak.Cloud.plist",
+          "com.mizage.divvy.plist",
+          "com.protocool.Propane.plist",
+          "com.spotify.client.plist",
+          "com.ugolandini.Pomodoro.plist",
+          "net.shinyfrog.delibar.plist"
+      ]
     }
 }
