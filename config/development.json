@@ -32,6 +32,7 @@
             "grc",
             "wget",
             "postgresql",
+            "libtool",
             "imagemagick",
             "libyaml",
             "brew-cask"

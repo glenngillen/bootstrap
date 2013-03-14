@@ -1,22 +1,16 @@
 {
 
     "run_list": [
-        "recipe[apps::chrome]",
-        "recipe[apps::dropbox]",
         "recipe[apps::adium]",
         "recipe[apps::doxie]",
         "recipe[apps::fitbit]",
-        "recipe[apps::flux]",
-        "recipe[apps::little_snitch]",
-        "recipe[apps::skype]",
-        "recipe[apps::spotify]",
         "recipe[apps::trailrunner]",
 
         "recipe[config::dock]",
         "recipe[config::finder]",
         "recipe[config::global]",
         "recipe[config::hot_corners]",
-        "recipe[config::screensaver]"
+        "recipe[config::screensaver]",
 
         "recipe[homebrew]",
         "recipe[homebrew::taps]",
@@ -40,7 +34,7 @@
             "dropbox",
             "divvy",
             "bartender",
-            "plex",
+            "plex"
 
         ]
     },
