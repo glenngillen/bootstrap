@@ -56,6 +56,7 @@
           "com.Growl.GrowlHelperApp.plist",
           "com.adiumX.adiumX.plist",
           "com.alfredapp.Alfred.plist",
+          "com.apple.loginitems.plist",
           "com.apple.Terminal.plist",
           "com.apple.iCal.Alarm.plist",
           "com.apple.iCal.helper.plist",
