@@ -9,7 +9,7 @@ Builds a dev machine for me. Based on [Ben Bleything's Bootstrap](https://github
 Contributions and Thanks
 ------------------------------------------------------------------------
 
-This bootstrap blatantly lifter from:
+This bootstrap blatantly lifted from:
 
 * [Ben Bleything][bleything]
 
