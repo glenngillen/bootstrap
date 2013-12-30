@@ -43,12 +43,12 @@ if [ ! -f ~/.rvm/scripts/rvm ]; then
   rm rvm-installer
 fi
 source ~/.bash_profile
-rvm 1.9.3
+rvm 2.1.0
 if [ $? -ne 0 ]; then
   echo "Installing Ruby"
-  rvm install 1.9.3
-  rvm 1.9.3 --default
-  rvm 1.9.3
+  rvm install 2.1.0
+  rvm 2.1.0 --default
+  rvm 2.1.0
   gem install bundler --no-ri --no-rdoc
   cd ~
 fi
@@ -63,7 +63,7 @@ if [ ! -f ~/Development/bootstrap/Gemfile ]; then
   rm -rf bootstrap/glenngillen-bootstrap-*
 fi
 cd ~/Development/bootstrap
-rvm use --create 1.9.3@bootstrap
+rvm 2.1.0
 bundle install
 echo "Go install Dropbox"
 echo "[Enter Y  when done]"
@@ -89,6 +89,6 @@ echo "Open a new terminal session and run 'bundle exec rake converge[type]' to s
 echo "Where type is something like: development, oncall, etc."
 echo ""
 echo "If you get an error about /Developer not existing you probably need to 'sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer'"
-echo "Until I find a better way, if you're getting YAML errors re-install ruby 1.9.3:"
-echo "rvm reinstall 1.9.3 --with-libyaml-dir=/usr/local"
+echo "Until I find a better way, if you're getting YAML errors re-install ruby 2.1.0:"
+echo "rvm reinstall 2.1.0 --with-libyaml-dir=/usr/local"
 echo ""
