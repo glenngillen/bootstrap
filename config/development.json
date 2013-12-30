@@ -21,12 +21,10 @@
 
     "homebrew": {
         "taps": [
-            "phinze/homebrew-cask"
         ],
         "packages": [
             "ack",
             "git",
-            "macvim",
             "libevent",
             "tmux",
             "grc",
@@ -35,8 +33,7 @@
             "libtool",
             "imagemagick",
             "libyaml",
-            "brew-cask",
-            "reattach-to-user-namespace"
+            "brew-cask"
         ],
         "casks": [
             "spotify",
@@ -48,10 +45,7 @@
             "dropbox",
             "gitx-l",
             "divvy",
-            "bartender",
-            "mailplane",
-            "hip-chat",
-            "lastpass-universal"
+            "bartender"
         ]
     },
 
@@ -60,7 +54,6 @@
           "com.Growl.GrowlHelperApp.plist",
           "com.adiumX.adiumX.plist",
           "com.alfredapp.Alfred.plist",
-          "com.apple.loginitems.plist",
           "com.apple.Terminal.plist",
           "com.apple.iCal.Alarm.plist",
           "com.apple.iCal.helper.plist",

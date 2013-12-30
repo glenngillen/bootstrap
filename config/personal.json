@@ -3,8 +3,6 @@
     "run_list": [
         "recipe[apps::adium]",
         "recipe[apps::doxie]",
-        "recipe[apps::fitbit]",
-        "recipe[apps::trailrunner]",
 
         "recipe[config::dock]",
         "recipe[config::finder]",
@@ -21,12 +19,12 @@
 
     "homebrew": {
         "taps": [
-            "phinze/homebrew-cask"
         ],
         "packages": [
             "brew-cask"
         ],
         "casks": [
+            "candybar",
             "spotify",
             "google-chrome",
             "skype",
