@@ -11,7 +11,7 @@ Contributions and Thanks
 
 This bootstrap blatantly lifter from:
 
-* [Ben Bleything][bbleything]
+* [Ben Bleything][bleything]
 
 Contributions from:
 
