@@ -33,11 +33,13 @@
             "libtool",
             "imagemagick",
             "libyaml",
-            "brew-cask"
+            "brew-cask",
+            "reattach-to-user-namespace",
+            "osxfuse",
+            "sshfs"
         ],
         "casks": [
             "spotify",
-            "google-chrome",
             "skype",
             "propane",
             "little-snitch",
