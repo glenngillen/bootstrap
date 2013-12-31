@@ -36,7 +36,9 @@
             "brew-cask",
             "reattach-to-user-namespace",
             "osxfuse",
-            "sshfs"
+            "sshfs",
+            "fswatch",
+            "unison"
         ],
         "casks": [
             "spotify",
