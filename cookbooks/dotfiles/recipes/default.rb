@@ -7,12 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
-gem_package "hub" do
-  not_if do
-    `which hub`.chomp.size > 0
-  end
-end
-
 git "#{ENV['HOME']}/dotfiles" do
   repository "https://github.com/glenngillen/dotfiles.git"
   reference "master"

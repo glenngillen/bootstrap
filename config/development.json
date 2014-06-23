@@ -1,6 +1,6 @@
 {
     "run_list": [
        "recipe[oh-my-zsh]",
-       "recipe[dotfiles]",
-    ],
+       "recipe[dotfiles]"
+    ]
 }
