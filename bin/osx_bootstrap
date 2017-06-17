@@ -1,20 +1,11 @@
 #!/bin/bash
-type gcc >/dev/null 2>/dev/null || {
-  echo "Installing GCC"
-  curl -L -o osx-gcc-installer.pkg https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.7-v2.pkg
-  sudo installer -pkg ./osx-gcc-installer.pkg -target "/"
-  rm osx-gcc-installer.pkg
-}
-echo "GCC Installed. Now go install XCode from the app store, we'll wait."
-echo "[Enter Y  when done]"
-while read aok; do
-  if [[ $aok == "Y" || $aok == "y" ]]; then
-    break;
-  else
-    echo "GCC Installed. Now go install XCode from the app store, we'll wait."
-    echo "[Press enter when done]";
-  fi
-done
+echo "Updating system install..."
+sudo softwareupdate -iva
+echo "done."
+echo "Installing xCode..."
+sudo xcode-select --install
+echo "done."
+
 echo "Did you actually run XCode? It doesn't install until you run it the first time"
 echo "[Enter Y  when done]"
 while read aok; do

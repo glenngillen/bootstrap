@@ -2,9 +2,9 @@
 
 Builds a dev machine for me. Based on [Ben Bleything's Bootstrap](https://github.com/bleything/bootstrap).
 
-## Usage
+## Usage - macOS
 
-    bash < <(curl -s https://raw.github.com/glenngillen/bootstrap/master/bin/bootstrap)
+    bash < <(curl -s https://raw.github.com/glenngillen/bootstrap/master/bin/osx_bootstrap)
 
 Contributions and Thanks
 ------------------------------------------------------------------------
