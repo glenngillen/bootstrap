@@ -4,7 +4,7 @@ Builds a dev machine for me. Based on [Ben Bleything's Bootstrap](https://github
 
 ## Usage - macOS
 
-    bash < <(curl -s https://raw.github.com/glenngillen/bootstrap/master/bin/osx_bootstrap)
+    bash < <(curl -s https://raw.githubusercontent.com/glenngillen/bootstrap/master/bin/osx_bootstrap)
 
 Contributions and Thanks
 ------------------------------------------------------------------------
