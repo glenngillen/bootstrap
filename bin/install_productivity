@@ -1,0 +1,23 @@
+#!/bin/bash
+
+brew install mas
+
+# Install Things3
+mas install 904280696
+
+# Install Be Focused Pro
+mas install 961632517
+
+# Install Fantastical
+mas install 435003921
+
+# Install Noizio
+mas install 928871589
+
+# Install Dropshare
+mas install 814499284
+
+# Install Divvy
+mas install 413857545
+
+brew cask install self-control

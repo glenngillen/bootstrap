@@ -1,0 +1,44 @@
+#!/bin/bash
+
+if [ ! -d "$HOME/.ssh" ]; then
+  echo "Linking .ssh"
+  ln -s ~/Dropbox/ssh ~/.ssh
+fi
+chmod 0600 ~/.ssh/*
+chmod 0700 ~/.ssh
+
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  echo "Install oh-my-zsh"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  brew install mas
+fi
+
+cd ~
+if [ ! -d "$HOME/dotfiles" ]; then
+  echo "Install dotfiles"
+  git clone https://github.com/glenngillen/dotfiles.git ~/dotfiles
+  ~/dotfiles/relinkdotfiles
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  vim +PluginInstall +qall
+fi
+
+# Install Pixelmator
+mas install 407963104
+
+# Install Screenflow
+mas install 917790450
+
+# Install Patterns
+mas install 429449079
+
+# Install GraphicalHTTPClient
+mas install 433095876
+
+brew cask install iterm2
+brew install neovim/neovim/neovim
+brew cask install google-chrome
+
+brew install tmux
+rvm @global do gem install tmuxinator
+
+brew install ack

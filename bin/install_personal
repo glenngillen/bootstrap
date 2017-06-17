@@ -1,0 +1,13 @@
+#!/bin/bash
+
+brew cask install 1password
+
+brew install mas
+
+# Install Twitter
+mas install 409789998
+
+brew install spotify
+brew install google-chrome
+brew install little-snitch
+brew install bartender
