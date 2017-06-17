@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Updating system install..."
-sudo softwareupdate -iva
+sudo softwareupdate -ia --verbose
 echo "done."
 echo "Installing xCode..."
 sudo xcode-select --install
