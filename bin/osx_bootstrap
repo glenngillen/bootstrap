@@ -34,6 +34,8 @@ if [ ! -f ~/.rvm/scripts/rvm ]; then
   rm rvm-installer
 fi
 source ~/.bash_profile
+rvm list known
+rvm install --latest
 rvm 2.1.0
 if [ $? -ne 0 ]; then
   echo "Installing Ruby"
