@@ -59,6 +59,8 @@ brew install python3
 brew install hub
 brew install reattach-to-user-namespace
 brew install pstree
+rvm @global do gem install pygments.rb
+brew install ghi
 
 brew cask install postman
 brew cask install recordit

@@ -1,30 +1,41 @@
 #!/bin/bash
 
 brew cask install 1password
+open /Applications/1Password\ 6.app/
 
 brew install mas
 
 # Install Twitter
 mas install 409789998
 
-brew install spotify
-brew install google-chrome
+# Install Ulysses
+mas install 623795237
+
+# Install Byword
+mas install 420212497
+
+brew cask install alfred
+open /Applications/Alfred\ 3.app/
+brew cask install spotify
+brew cask install google-chrome
 brew cask install little-snitch
 brew cask install micro-snitch
-brew install bartender
+brew cask install bartender
+open /Applications/Bartender\ 2.app/
 
-brew cask install byword
 brew cask install cloak
-brew services start cloak
+open /Applications/Cloak.app/
 brew cask install flux
+open /Applications/Flux.app/
 brew cask install licecap
 
 brew cask install slack
 brew cask install screenhero
+open /Applications/Screenhero.app/
 brew cask install transmit
-brew cask install ulysses
 brew cask install vlc
 brew cask install whatsapp
 brew cask install whatsize
 brew cask install zoom
 brew cask install skype
+brew cask install polymail
