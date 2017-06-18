@@ -4,24 +4,30 @@ brew install mas
 
 # Install Things3
 mas install 904280696
+open /Applications/Things3.app/
 
 # Install Be Focused Pro
 mas install 961632517
+open /Applications/Be\ Focused\ Pro.app/
 
 # Install Fantastical
 mas install 435003921
+open /Applications/Fantastical.app/
 
 # Install Noizio
 mas install 928871589
+open /Applications/Noizio.app/
 
 # Install Dropshare
 mas install 814499284
+open /Applications/Dropshare.app/
 
 # Install Divvy
 mas install 413857545
+open /Applications/Divvy.app/
 
-brew cask install self-control
+brew cask install selfcontrol
 brew cask install rescuetime
-brew services start rescuetime
+open /Applications/RescueTime.app/
 brew cask install keyboard-maestro
-brew services start keyboard-maestro
+open /Applications/Keyboard\ Maestro.app/

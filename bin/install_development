@@ -62,8 +62,6 @@ brew install pstree
 
 brew cask install postman
 brew cask install recordit
-brew services start recordit
+open /Applications/RecordIt.app/
 brew cask install little-snitch
-brew services start little-snitch
 brew cask install micro-snitch
-brew services start micro-snitch
