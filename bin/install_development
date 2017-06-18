@@ -42,3 +42,23 @@ brew install tmux
 rvm @global do gem install tmuxinator
 
 brew install ack
+
+brew install awscli
+brew install aws-elasticbeanstalk
+brew install aws-shell
+
+brew install wget
+brew install jq
+brew install git
+brew install go
+brew install node
+brew install python
+brew install python3
+brew install hub
+brew install openssl
+brew install reattach-to-user-namespace
+brew install pstree
+
+brew install postman
+brew cask install recordit
+brew install little-snitch

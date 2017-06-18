@@ -11,3 +11,18 @@ brew install spotify
 brew install google-chrome
 brew install little-snitch
 brew install bartender
+
+brew cask install byword
+brew cask install cloak
+brew cask install flux
+brew cask install licecap
+
+brew cask install slack
+brew cask install screenhero
+brew cask install transmit
+brew cask install ulysses
+brew cask install vlc
+brew cask install whatsapp
+brew cask install whatsize
+brew cask install zoom
+brew cask install skype

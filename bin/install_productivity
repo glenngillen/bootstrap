@@ -21,3 +21,6 @@ mas install 814499284
 mas install 413857545
 
 brew cask install self-control
+brew cask install rescuetime
+brew cask install keyboard-maestro
+
