@@ -20,14 +20,20 @@ open /Applications/Noizio.app/
 
 # Install Dropshare
 mas install 814499284
+bin/sync_plist net.mkswap.Dropshare.plist
 open /Applications/Dropshare.app/
 
 # Install Divvy
 mas install 413857545
+bin/sync_plist com.mizage.Divvy.plist
 open /Applications/Divvy.app/
 
 brew cask install selfcontrol
+bin/sync_plist org.eyebeam.SelfControl.plist
 brew cask install rescuetime
 open /Applications/RescueTime.app/
 brew cask install keyboard-maestro
+bin/sync_plist com.stairways.keyboardmaestro.plist
+bin/sync_plist com.stairways.keyboardmaestro.engine.plist
+bin/sync_plist com.stairways.keyboardmaestro.editor.plist
 open /Applications/Keyboard\ Maestro.app/

@@ -35,6 +35,8 @@ mas install 429449079
 mas install 433095876
 
 brew cask install iterm2
+bin/sync_plist com.googlecode.iterm2.plist
+
 brew install neovim/neovim/neovim
 brew cask install google-chrome
 
