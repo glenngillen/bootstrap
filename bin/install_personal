@@ -9,11 +9,16 @@ mas install 409789998
 
 brew install spotify
 brew install google-chrome
-brew install little-snitch
+brew cask install little-snitch
+brew services start little-snitch
+brew cask install micro-snitch
+brew services start micro-snitch
 brew install bartender
+brew services start bartender
 
 brew cask install byword
 brew cask install cloak
+brew services start cloak
 brew cask install flux
 brew cask install licecap
 
