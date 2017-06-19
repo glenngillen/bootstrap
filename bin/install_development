@@ -67,5 +67,3 @@ brew install ghi
 brew cask install postman
 brew cask install recordit
 open /Applications/RecordIt.app/
-brew cask install little-snitch
-brew cask install micro-snitch

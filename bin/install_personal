@@ -19,8 +19,6 @@ bin/sync_plist com.alfredapp.Alfred.plist
 open /Applications/Alfred\ 3.app/
 brew cask install spotify
 brew cask install google-chrome
-brew cask install little-snitch
-brew cask install micro-snitch
 brew cask install bartender
 bin/sync_plist com.surteesstudios.Bartender.plist
 open /Applications/Bartender\ 2.app/

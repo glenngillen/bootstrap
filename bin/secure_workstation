@@ -1,0 +1,25 @@
+#!/bin/bash
+BASE_PATH="`cd "$(dirname $0)/.." && pwd`"
+
+defaults write com.apple.screensaver askForPassword -bool true
+defaults write com.apple.screensaver askForPasswordDelay 0
+defaults -currentHost write com.apple.screensaver idleTime 300
+
+sudo fdesetup status | grep On
+if [[ $? != 0 ]]; then
+  echo "FileVault disk encryption has not been enabled."
+  exit 1
+fi
+
+brew cask install little-snitch
+brew cask install micro-snitch
+
+if ! [ -x "$(command -v usbkill)" ]; then
+  echo "Installing usbkill..."
+  git clone --depth 1 https://github.com/hephaest0s/usbkill.git /tmp/usbkill
+  cd /tmp/usbkill
+  sudo python setup.py install
+  sudo cp $BASE_PATH/com.glenngillen.usbkill.plist /Library/LaunchDaemons
+  sudo launchctl load /Library/LaunchDaemons/com.glenngillen.usbkill.plist
+  rm -rf /tmp/usbkill
+fi
