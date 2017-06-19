@@ -1,9 +1,0 @@
-# Tasks
-- Open casks that are installed so they can be set to open at login and/or be configured
-
-# Include these apps/app settings
-- Mailplane 3
-- Fantastical
-- Textexpander
-- Make the Alfred keybinding persist
-- synx unsaved text docs (~/Library/Containers/com.apple.TextEdit/Data/Library/Autosave\ Information/)
