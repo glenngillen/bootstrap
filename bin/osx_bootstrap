@@ -5,27 +5,6 @@ echo "done."
 echo "Installing xCode..."
 sudo xcode-select --install
 echo "done."
-
-echo "Did you actually run XCode? It doesn't install until you run it the first time"
-echo "[Enter Y  when done]"
-while read aok; do
-  if [[ $aok == "Y" || $aok == "y" ]]; then
-    break;
-  else
-    echo "Did you actually run XCode? It doesn't install until you run it the first time"
-    echo "[Press enter when done]";
-  fi
-done
-echo "Did you install the Command Line Tools? Go to the download preferences in XCode"
-echo "[Enter Y  when done]"
-while read aok; do
-  if [[ $aok == "Y" || $aok == "y" ]]; then
-    break;
-  else
-    echo "Did you install the Command Line Tools? Go to the download preferences in XCode"
-    echo "[Press enter when done]";
-  fi
-done
 if [ ! -f ~/.rvm/scripts/rvm ]; then
   echo "Installing RVM"
   curl -L -o rvm-installer https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer
@@ -69,20 +48,47 @@ while read aok; do
     echo "[Press enter when done]";
   fi
 done
-if [ ! -d ~/Development/bootstrap/vendored_cookbooks/homebrew ]; then
-  curl -L -o homebrew.zip https://github.com/opscode-cookbooks/homebrew/archive/master.zip
-  unzip homebrew.zip -d vendored_cookbooks
-  mv vendored_cookbooks/homebrew-master vendored_cookbooks/homebrew
-  rm -rf homebrew.zip
-fi
-echo ""
-echo ""
-echo ""
-echo ""
-echo "Open a new terminal session and run 'bundle exec rake converge[type]' to setup"
-echo "Where type is something like: development, oncall, etc."
-echo ""
-echo "If you get an error about /Developer not existing you probably need to 'sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer'"
-echo "Until I find a better way, if you're getting YAML errors re-install ruby 2.1.0:"
-echo "rvm reinstall 2.1.0 --with-libyaml-dir=/usr/local"
-echo ""
+
+while read aok; do
+  if [[ $aok == "Y" || $aok == "y" ]]; then
+    ./install_development
+    break;
+  elif [[ $aok == "N" || $aok == "n" ]]; then
+    break;
+  else
+    echo "Is this going to be a development machine?"
+  fi
+done
+
+while read aok; do
+  if [[ $aok == "Y" || $aok == "y" ]]; then
+    ./install_productivity
+    break;
+  elif [[ $aok == "N" || $aok == "n" ]]; then
+    break;
+  else
+    echo "Do you want the productivity tools installed?"
+  fi
+done
+
+while read aok; do
+  if [[ $aok == "Y" || $aok == "y" ]]; then
+    ./install_personal
+    break;
+  elif [[ $aok == "N" || $aok == "n" ]]; then
+    break;
+  else
+    echo "Install personal apps?"
+  fi
+done
+
+while read aok; do
+  if [[ $aok == "Y" || $aok == "y" ]]; then
+    ./install_personal
+    break;
+  elif [[ $aok == "N" || $aok == "n" ]]; then
+    break;
+  else
+    echo "Install security tools?"
+  fi
+done
