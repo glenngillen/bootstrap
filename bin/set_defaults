@@ -1,0 +1,43 @@
+#!/bin/bash
+
+echo " Expand save panel by default."
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+echo " Expand print panel by default"
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+
+echo " Automatically illuminate built-in MacBook keyboard in low light"
+defaults write com.apple.BezelServices kDim -bool true
+
+echo " Turn off keyboard illumination when computer is not used for 5 minutes"
+defaults write com.apple.BezelServices kDimTime -int 300
+
+echo " Check for software updates daily, not just once per week"
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
+echo " Increase sound quality for Bluetooth headphones/headsets"
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+
+echo " Enable full keyboard access for all controls"
+echo " (e.g. enable Tab in modal dialogs)"
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+echo " Finder: show hidden files by default"
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+echo " Finder: show all filename extensions"
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+echo " Finder: show status bar"
+defaults write com.apple.finder ShowStatusBar -bool true
+
+echo " Avoid creating .DS_Store files on network volumes"
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+echo " Use list view in all Finder windows by default"
+# Four-letter codes for the other view modes: icnv, clmv, Flwv"
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+echo " Automatically hide and show the Dock"
+defaults write com.apple.dock autohide -bool true
+
