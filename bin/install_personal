@@ -33,7 +33,7 @@ brew cask install transmit
 brew cask install vlc
 brew cask install whatsapp
 brew cask install whatsize
-brew cask install zoom
+brew cask install zoomus
 brew cask install skype
 brew cask install polymail
 
@@ -41,4 +41,4 @@ $SCRIPTPATH/sync_plist com.apple.Dock.plist
 
 npm install -g nativefier
 reload
-nativefier --name "Asana" "https://app.asana.com"
+nativefier --name "Asana" "https://app.asana.com" /Applications
