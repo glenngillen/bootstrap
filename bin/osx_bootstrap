@@ -16,15 +16,6 @@ source ~/.bash_profile
 rvm list known
 rvm install ruby --latest --default
 rvm
-rvm 2.1.0
-if [ $? -ne 0 ]; then
-  echo "Installing Ruby"
-  rvm install 2.1.0
-  rvm 2.1.0 --default
-  rvm 2.1.0
-  gem install bundler --no-ri --no-rdoc
-  cd ~
-fi
 if [ ! -f ~/Development/bootstrap/Gemfile ]; then
   echo "Installing bootstrap and chef scripts"
   mkdir -p ~/Development/bootstrap
@@ -36,7 +27,6 @@ if [ ! -f ~/Development/bootstrap/Gemfile ]; then
   rm -rf bootstrap/glenngillen-bootstrap-*
 fi
 cd ~/Development/bootstrap
-rvm 2.1.0
 bundle install
 echo "Go install Dropbox"
 echo "[Enter Y  when done]"
@@ -92,3 +82,4 @@ while read aok; do
     echo "Install security tools?"
   fi
 done
+
