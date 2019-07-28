@@ -1,10 +1,11 @@
 #!/bin/bash
 
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 brew install mas
 
 # Install Things3
-mas install 904280696
-open /Applications/Things3.app/
+#mas install 904280696
+#open /Applications/Things3.app/
 
 # Install Be Focused Pro
 mas install 961632517
@@ -20,20 +21,20 @@ open /Applications/Noizio.app/
 
 # Install Dropshare
 mas install 814499284
-bin/sync_plist net.mkswap.Dropshare.plist
+$SCRIPTPATH/sync_plist net.mkswap.Dropshare.plist
 open /Applications/Dropshare.app/
 
 # Install Divvy
 mas install 413857545
-bin/sync_plist com.mizage.Divvy.plist
+$SCRIPTPATH/sync_plist com.mizage.Divvy.plist
 open /Applications/Divvy.app/
 
 brew cask install selfcontrol
-bin/sync_plist org.eyebeam.SelfControl.plist
+$SCRIPTPATH/sync_plist org.eyebeam.SelfControl.plist
 brew cask install rescuetime
 open /Applications/RescueTime.app/
 brew cask install keyboard-maestro
-bin/sync_plist com.stairways.keyboardmaestro.plist
-bin/sync_plist com.stairways.keyboardmaestro.engine.plist
-bin/sync_plist com.stairways.keyboardmaestro.editor.plist
+$SCRIPTPATH/sync_plist com.stairways.keyboardmaestro.plist
+$SCRIPTPATH/sync_plist com.stairways.keyboardmaestro.engine.plist
+$SCRIPTPATH/sync_plist com.stairways.keyboardmaestro.editor.plist
 open /Applications/Keyboard\ Maestro.app/

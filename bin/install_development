@@ -1,5 +1,6 @@
 #!/bin/bash
 
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 if [ ! -d "$HOME/.ssh" ]; then
   echo "Linking .ssh"
   ln -s ~/Dropbox/ssh ~/.ssh
@@ -10,8 +11,8 @@ chmod 0700 ~/.ssh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "Install oh-my-zsh"
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  brew install mas
 fi
+brew install mas
 
 cd ~
 if [ ! -d "$HOME/dotfiles" ]; then
@@ -31,11 +32,8 @@ mas install 917790450
 # Install Patterns
 mas install 429449079
 
-# Install GraphicalHTTPClient
-mas install 433095876
-
 brew cask install iterm2
-bin/sync_plist com.googlecode.iterm2.plist
+$SCRIPTPATH/sync_plist com.googlecode.iterm2.plist
 
 brew install neovim/neovim/neovim
 brew cask install google-chrome

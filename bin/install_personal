@@ -1,7 +1,8 @@
 #!/bin/bash
 
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 brew cask install 1password
-open /Applications/1Password\ 6.app/
+open /Applications/1Password\ 7.app/
 
 brew install mas
 
@@ -15,24 +16,19 @@ mas install 623795237
 mas install 420212497
 
 brew cask install alfred
-bin/sync_plist com.alfredapp.Alfred.plist
+$SCRIPTPATH/sync_plist com.alfredapp.Alfred.plist
 open /Applications/Alfred\ 3.app/
 brew cask install spotify
 brew cask install google-chrome
 brew cask install bartender
-bin/sync_plist com.surteesstudios.Bartender.plist
+$SCRIPTPATH/sync_plist com.surteesstudios.Bartender.plist
 open /Applications/Bartender\ 2.app/
 
 brew cask install cloak
 open /Applications/Cloak.app/
-brew cask install flux
-bin/sync_plist org.herf.Flux.plist
-open /Applications/Flux.app/
 brew cask install licecap
 
 brew cask install slack
-brew cask install screenhero
-open /Applications/Screenhero.app/
 brew cask install transmit
 brew cask install vlc
 brew cask install whatsapp
@@ -40,3 +36,5 @@ brew cask install whatsize
 brew cask install zoom
 brew cask install skype
 brew cask install polymail
+
+$SCRIPTPATH/sync_plist com.apple.Dock.plist
