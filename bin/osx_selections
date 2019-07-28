@@ -1,0 +1,49 @@
+#!/bin/bash
+echo "Is this going to be a development machine?"
+while read aok; do
+  if [[ $aok == "Y" || $aok == "y" ]]; then
+    ./bin/install_development
+    break;
+  elif [[ $aok == "N" || $aok == "n" ]]; then
+    break;
+  else
+    echo "Is this going to be a development machine?"
+  fi
+done
+
+echo "Do you want the productivity tools installed?"
+while read aok; do
+  if [[ $aok == "Y" || $aok == "y" ]]; then
+    ./bin/install_productivity
+    break;
+  elif [[ $aok == "N" || $aok == "n" ]]; then
+    break;
+  else
+    echo "Do you want the productivity tools installed?"
+  fi
+done
+
+echo "Install personal apps?"
+while read aok; do
+  if [[ $aok == "Y" || $aok == "y" ]]; then
+    ./bin/install_personal
+    break;
+  elif [[ $aok == "N" || $aok == "n" ]]; then
+    break;
+  else
+    echo "Install personal apps?"
+  fi
+done
+
+    echo "Install security tools?"
+while read aok; do
+  if [[ $aok == "Y" || $aok == "y" ]]; then
+    ./bin/secure_workstation
+    break;
+  elif [[ $aok == "N" || $aok == "n" ]]; then
+    break;
+  else
+    echo "Install security tools?"
+  fi
+done
+

@@ -13,7 +13,6 @@ if [ ! -f ~/.rvm/scripts/rvm ]; then
   rm rvm-installer
 fi
 source ~/.bash_profile
-rvm list known
 rvm install ruby --latest --default
 rvm
 if [ ! -f ~/Development/bootstrap/Gemfile ]; then
@@ -39,47 +38,4 @@ while read aok; do
   fi
 done
 
-while read aok; do
-  if [[ $aok == "Y" || $aok == "y" ]]; then
-    ./install_development
-    break;
-  elif [[ $aok == "N" || $aok == "n" ]]; then
-    break;
-  else
-    echo "Is this going to be a development machine?"
-  fi
-done
-
-while read aok; do
-  if [[ $aok == "Y" || $aok == "y" ]]; then
-    ./install_productivity
-    break;
-  elif [[ $aok == "N" || $aok == "n" ]]; then
-    break;
-  else
-    echo "Do you want the productivity tools installed?"
-  fi
-done
-
-while read aok; do
-  if [[ $aok == "Y" || $aok == "y" ]]; then
-    ./install_personal
-    break;
-  elif [[ $aok == "N" || $aok == "n" ]]; then
-    break;
-  else
-    echo "Install personal apps?"
-  fi
-done
-
-while read aok; do
-  if [[ $aok == "Y" || $aok == "y" ]]; then
-    ./install_personal
-    break;
-  elif [[ $aok == "N" || $aok == "n" ]]; then
-    break;
-  else
-    echo "Install security tools?"
-  fi
-done
-
+./osx_selections
