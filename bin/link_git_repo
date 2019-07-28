@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd ..
+git clone https://github.com/glenngillen/bootstrap.git bootstrap-dev
+cp -r $HOME/Development/bootstrap/* $HOME/Development/bootstrap-dev && rm -rf $HOME/Development/bootstrap
+rm $HOME/Development/bootstrap.zip
+
