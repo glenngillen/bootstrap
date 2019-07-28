@@ -22,10 +22,10 @@ brew cask install spotify
 brew cask install google-chrome
 brew cask install bartender
 $SCRIPTPATH/sync_plist com.surteesstudios.Bartender.plist
-open /Applications/Bartender\ 2.app/
+open /Applications/Bartender\ 3.app/
 
-brew cask install cloak
-open /Applications/Cloak.app/
+brew cask install encryptme
+open /Applications/EncrypeMe.app/
 brew cask install licecap
 
 brew cask install slack
@@ -38,3 +38,7 @@ brew cask install skype
 brew cask install polymail
 
 $SCRIPTPATH/sync_plist com.apple.Dock.plist
+
+npm install -g nativefier
+reload
+nativefier --name "Asana" "https://app.asana.com"
