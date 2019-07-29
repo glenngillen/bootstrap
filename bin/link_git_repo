@@ -5,3 +5,13 @@ git clone https://github.com/glenngillen/bootstrap.git bootstrap-dev
 cp -r $HOME/Development/bootstrap/* $HOME/Development/bootstrap-dev && rm -rf $HOME/Development/bootstrap
 rm $HOME/Development/bootstrap.zip
 
+if [[ ! -f ~/.netrc ]] || [[ -z $(grep "machine github.com" ~/.netrc) ]]; then
+  echo "Setting up .netrc for GitHub"
+  `open "https://github.com/settings/tokens"`
+  echo ""
+  read -s -p "Create GitHub Personal Access Token and paste it in here (input will be hidden): " token
+  echo "machine github.com
+  login glenngillen
+  password $token
+" >> ~/.netrc
+fi
