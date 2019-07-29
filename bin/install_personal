@@ -41,4 +41,4 @@ $SCRIPTPATH/sync_plist com.apple.Dock.plist
 
 npm install -g nativefier
 reload
-nativefier --name "Asana" "https://app.asana.com" /Applications
+nativefier --name "Asana" "https://app.asana.com" --internal-urls ".*?\.(google|atlassian)\.*?" /Applications
