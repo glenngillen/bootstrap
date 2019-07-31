@@ -1,4 +1,3 @@
-* Setup GitHub MFA token in .netrc
 * Add Inspotop
 * Add habits app
     * Have it open on a schedule
