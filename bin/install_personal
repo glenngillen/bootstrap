@@ -41,4 +41,8 @@ $SCRIPTPATH/sync_plist com.apple.Dock.plist
 
 npm install -g nativefier
 reload
-nativefier --name "Asana" "https://app.asana.com" --internal-urls ".*?\.(google|atlassian)\.*?" /Applications
+nativefier --name "Asana - Hashicorp" "https://app.asana.com" --internal-urls ".*?(accounts.google|\.atlassian)\.*?" /Applications
+nativefier --name "Gmail" "https://www.gmail.com" --internal-urls ".*?mail.google.*?" /Applications
+nativefier --name "Google Calendar" "https://calendar.google.com" /Applications
+nativefier --name "Google Drive - Hashicorp" "https://drive.google.com" --internal-urls ".*?\.(google)\.*?" /Applications
+
