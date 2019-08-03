@@ -28,6 +28,8 @@ if ! [ -x "$(command -v usbkill)" ]; then
   cd /tmp/usbkill
   sudo python setup.py install
   sudo ln -s $BASE_PATH/plists/com.glenngillen.usbkill.plist /Library/LaunchDaemons/com.glenngillen.usbkill.plist
+  sudo rm -rf /etc/usbkill.ini
+  sudo ln -s ~/Dropbox/ssh/usbkill.ini /etc/usbkill.ini
   sudo launchctl load /Library/LaunchDaemons/com.glenngillen.usbkill.plist
   rm -rf /tmp/usbkill
 fi
