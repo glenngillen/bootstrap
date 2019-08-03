@@ -45,4 +45,4 @@ nativefier --name "Asana - Hashicorp" "https://app.asana.com" --internal-urls ".
 nativefier --name "Gmail" "https://www.gmail.com" --internal-urls ".*?mail.google.*?" /Applications
 nativefier --name "Google Calendar" "https://calendar.google.com" /Applications
 nativefier --name "Google Drive - Hashicorp" "https://drive.google.com" --internal-urls ".*?\.(google)\.*?" /Applications
-nativefier --name "Habits" "https://docs.google.com/spreadsheets/d/1kE-fZm9Qxfw8BvKV-nWoceDmug-neeVtqeeOqNQ2gmE/edit#gid=0" /Applications
+nativefier --name "Habits" --icon "assets/Flat_tick_icon.svg.png" "https://docs.google.com/spreadsheets/d/1kE-fZm9Qxfw8BvKV-nWoceDmug-neeVtqeeOqNQ2gmE/edit#gid=0" /Applications

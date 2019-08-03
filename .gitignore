@@ -3,3 +3,4 @@
 .chef/checksums/
 .*.sw?
 vendored_cookbooks/homebrew
+.DS_Store
