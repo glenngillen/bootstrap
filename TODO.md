@@ -1,6 +1,4 @@
 * Add Inspotop
-* Add habits app
-    * Have it open on a schedule
 * Fix keyboard maestro shortcuts
 * Consolidate on standard keys for enabling attention focus, switching bluetooth
 * Find a way to regularly prompt to bring focus
