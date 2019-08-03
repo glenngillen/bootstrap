@@ -27,7 +27,7 @@ if ! [ -x "$(command -v usbkill)" ]; then
   git clone --depth 1 https://github.com/hephaest0s/usbkill.git /tmp/usbkill
   cd /tmp/usbkill
   sudo python setup.py install
-  sudo cp $BASE_PATH/com.glenngillen.usbkill.plist /Library/LaunchDaemons
+  sudo ln -s $BASE_PATH/plists/com.glenngillen.usbkill.plist /Library/LaunchDaemons/com.glenngillen.usbkill.plist
   sudo launchctl load /Library/LaunchDaemons/com.glenngillen.usbkill.plist
   rm -rf /tmp/usbkill
 fi
