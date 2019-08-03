@@ -46,3 +46,5 @@ nativefier --name "Gmail" "https://www.gmail.com" --internal-urls ".*?mail.googl
 nativefier --name "Google Calendar" "https://calendar.google.com" /Applications
 nativefier --name "Google Drive - Hashicorp" "https://drive.google.com" --internal-urls ".*?\.(google)\.*?" /Applications
 nativefier --name "Habits" --icon "assets/Flat_tick_icon.svg.png" "https://docs.google.com/spreadsheets/d/1kE-fZm9Qxfw8BvKV-nWoceDmug-neeVtqeeOqNQ2gmE/edit#gid=0" /Applications
+ln -s "$PWD/plists/com.glenngillen.habits.plist" ~/Library/LaunchAgents/com.glenngillen.habits.plist
+launchctl load ~/Library/LaunchAgents/com.glenngillen.habits.plist
