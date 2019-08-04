@@ -6,9 +6,6 @@ open /Applications/1Password\ 7.app/
 
 brew install mas
 
-# Install Twitter
-mas install 409789998
-
 # Install Ulysses
 mas install 623795237
 
