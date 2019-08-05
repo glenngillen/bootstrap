@@ -12,6 +12,10 @@ mas install 623795237
 # Install Byword
 mas install 420212497
 
+# Install Amphetamine
+mas install 937984704
+open /Applications/Amphetamine.app
+
 brew cask install alfred
 $SCRIPTPATH/sync_plist com.alfredapp.Alfred.plist
 open /Applications/Alfred\ 3.app/
