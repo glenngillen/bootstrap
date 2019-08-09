@@ -51,6 +51,6 @@ nativefier --name "Google Drive - Hashicorp" "https://drive.google.com" --intern
 nativefier --name "Habits" --icon "assets/Flat_tick_icon.svg.png" "https://docs.google.com/spreadsheets/d/1kE-fZm9Qxfw8BvKV-nWoceDmug-neeVtqeeOqNQ2gmE/edit#gid=0" /Applications
 ln -s "$PWD/plists/com.glenngillen.habits.plist" ~/Library/LaunchAgents/com.glenngillen.habits.plist
 launchctl load ~/Library/LaunchAgents/com.glenngillen.habits.plist
-nativefier --name "Terraform Cloud" "https://app.terraform.io/" /Applications
+nativefier --name "Terraform Cloud" --icon "assets/terraform.png" "https://app.terraform.io/" /Applications
 
 brew install jupyter
