@@ -39,6 +39,7 @@ brew cask install skype
 brew cask install polymail
 brew cask install lighting
 open /Applications/Lighting.app
+brew cask install krisp
 
 $SCRIPTPATH/sync_plist com.apple.Dock.plist
 
