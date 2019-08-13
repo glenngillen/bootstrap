@@ -55,3 +55,5 @@ launchctl load ~/Library/LaunchAgents/com.glenngillen.habits.plist
 nativefier --name "Terraform Cloud" --icon "assets/terraform.png" "https://app.terraform.io/" /Applications
 
 brew install jupyter
+
+sudo defaults write com.apple.loginwindow LoginHook $SCRIPTPATH/remap_capslock
