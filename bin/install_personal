@@ -57,3 +57,5 @@ nativefier --name "Terraform Cloud" --icon "assets/terraform.png" "https://app.t
 brew install jupyter
 
 sudo defaults write com.apple.loginwindow LoginHook $SCRIPTPATH/remap_capslock
+
+cd ~/Development && git clone https://github.com/glenngillen/inspotop.git && cd inspotop && ./bin/setup
