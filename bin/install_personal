@@ -59,3 +59,12 @@ brew install jupyter
 sudo defaults write com.apple.loginwindow LoginHook $SCRIPTPATH/remap_capslock
 
 cd ~/Development && git clone https://github.com/glenngillen/inspotop.git && cd inspotop && ./bin/setup
+
+brew cask install homebrew/cask-versions/adoptopenjdk8
+brew install metabase
+sudo brew services start metabase
+sqlite3 ~/goals.db "create table goals (id INTEGER PRIMARY KEY ASC, target INTEGER NOT NULL, current INTEGER DEFAULT 0)"
+open http://localhost:3000/setup
+
+brew cask install timing
+open /Applications/Timing.app

@@ -69,3 +69,6 @@ open /Applications/RecordIt.app/
 brew cask install visual-studio-code
 
 $SCRIPTPATH/link_get_repo
+
+brew install wdiff
+brew install colordiff
