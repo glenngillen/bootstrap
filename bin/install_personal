@@ -43,8 +43,10 @@ brew cask install krisp
 
 $SCRIPTPATH/sync_plist com.apple.Dock.plist
 
-npm install -g nativefier
-reload
+cd ~/Development && git clone https://github.com/dahjelle/nativefier.git
+cd nativefier
+git checkout -b url-opener dahjelle/url-opener
+npm run dev-up && npm run build && npm link
 nativefier --name "Asana - Hashicorp" "https://app.asana.com" --internal-urls ".*?(accounts.google|\.atlassian)\.*?" /Applications
 nativefier --name "Gmail" "https://www.gmail.com" --internal-urls ".*?mail.google.*?" /Applications
 nativefier --name "Google Calendar" "https://calendar.google.com" /Applications
@@ -52,7 +54,7 @@ nativefier --name "Google Drive - Hashicorp" "https://drive.google.com" --intern
 nativefier --name "Habits" --icon "assets/Flat_tick_icon.svg.png" "https://docs.google.com/spreadsheets/d/1kE-fZm9Qxfw8BvKV-nWoceDmug-neeVtqeeOqNQ2gmE/edit#gid=0" /Applications
 ln -s "$PWD/plists/com.glenngillen.habits.plist" ~/Library/LaunchAgents/com.glenngillen.habits.plist
 launchctl load ~/Library/LaunchAgents/com.glenngillen.habits.plist
-nativefier --name "Terraform Cloud" --icon "assets/terraform.png" "https://app.terraform.io/" /Applications
+nativefier --name "Terraform Cloud" --icon "assets/terraform.png" --internal-urls ".*(\.github)\.*" "https://app.terraform.io/" /Applications
 
 brew install jupyter
 
