@@ -3,10 +3,6 @@
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 brew install mas
 
-# Install Things3
-#mas install 904280696
-#open /Applications/Things3.app/
-
 # Install Be Focused Pro
 mas install 961632517
 open /Applications/Be\ Focused\ Pro.app/
@@ -31,8 +27,6 @@ open /Applications/Divvy.app/
 
 brew cask install selfcontrol
 $SCRIPTPATH/sync_plist org.eyebeam.SelfControl.plist
-brew cask install rescuetime
-open /Applications/RescueTime.app/
 brew cask install keyboard-maestro
 $SCRIPTPATH/sync_plist com.stairways.keyboardmaestro.plist
 $SCRIPTPATH/sync_plist com.stairways.keyboardmaestro.engine.plist
