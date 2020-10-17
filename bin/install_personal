@@ -39,10 +39,9 @@ cd ~/Development && git clone https://github.com/glenngillen/nativefier.git
 cd nativefier
 git checkout -b url-opener dahjelle/url-opener
 npm run dev-up && npm run build && npm link
-#nativefier --name "Asana - Hashicorp" "https://app.asana.com" --internal-urls ".*?(accounts.google|\.atlassian|\.okta)\.*?" /Applications
+
 nativefier --name "Gmail" "https://www.gmail.com" -u "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" --internal-urls ".*?mail.google.*?" /Applications
 nativefier --name "Google Calendar" "https://calendar.google.com" /Applications
-#nativefier --name "Google Drive - Hashicorp" "https://drive.google.com" --internal-urls ".*?\.(google)\.*?" /Applications
 nativefier --name "Habits" --icon "assets/Flat_tick_icon.svg.png" "https://docs.google.com/spreadsheets/d/1kE-fZm9Qxfw8BvKV-nWoceDmug-neeVtqeeOqNQ2gmE/edit#gid=0" /Applications
 ln -s "$PWD/plists/com.glenngillen.habits.plist" ~/Library/LaunchAgents/com.glenngillen.habits.plist
 launchctl load ~/Library/LaunchAgents/com.glenngillen.habits.plist
